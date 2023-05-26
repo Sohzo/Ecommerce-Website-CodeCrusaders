@@ -23,6 +23,6 @@ const clothingdata = [
   },
 ];
 
-const seedClothing = () => Clothing.bulkCreate(seeddata);
+const seedClothing = () => Clothing.bulkCreate(clothingdata);
 
 module.exports = seedClothing;

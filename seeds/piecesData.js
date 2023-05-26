@@ -1,6 +1,6 @@
-const { Pieces } = require('../models');
+const { Piece } = require('../models');
 
-const piecesdata = [
+const piecedata = [
   {
     title: 'Blossoming Apricot',
     artist: 'LedyX',
@@ -80,6 +80,6 @@ const piecesdata = [
   },
 ];
 
-const seedPieces = () => Pieces.bulkCreate(piecesdata);
+const seedPieces = () => Piece.bulkCreate(piecedata);
 
 module.exports = seedPieces;

@@ -1,13 +1,13 @@
 const User = require('./User');
 const Clothing = require('./Clothing');
-const Pieces = require('./Pieces');
+const Piece = require('./Pieces');
 
-Clothing.hasMany(Pieces, {
+Clothing.hasMany(Piece, {
   foreignKey: 'clothing_id',
 });
 
-Pieces.belongsTo(Clothing, {
-  foreignKey: 'pieces_id',
+Piece.belongsTo(Clothing, {
+  foreignKey: 'piece_id',
 });
 
-module.exports = { User, Clothing, Pieces };
+module.exports = { User, Clothing, Piece };
