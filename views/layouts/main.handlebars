@@ -4,34 +4,38 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Museum</title>
+  <title>CCA</title>
   <link rel="stylesheet" type="text/css" href="/css/jass.css">
-  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/2e52a06efa.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <header>
-    <h1>Welcome to the Four Seasons Museum</h1>
+    <img src="./images/code-crusaders-logo.jpg" alt="CCA Logo">
+    <h1>Code Crusaders Apparel</h1>
   </header>
   <nav>
-    <a href="/">Home</a>
-    {{#if loggedIn}}
-    <button id="logout" class="btn-no-style">Logout</button>
-    {{else}}
-    <a href="/login">Login</a>
-    {{/if}}
-  </nav>
-  <main>
-    <aside>
-      <h2>Enjoy the galleries!</h2>
-    </aside>
-    <div class="gallery">
-      {{{body}}}
+    <div>
+      <button id="btn-men" class="btn-no-style">Men</button>
+      <button id="btn-women" class="btn-no-style">Women</button>
     </div>
-  </main>
-  {{#if loggedIn}}
-  <script src="/js/logout.js"></script>
-  {{/if}}
+    <div>
+      <button id="logout" class="btn-no-style">Logout</button>
+      <button id="account" class="btn-no-style"><i class="fa-regular fa-user"></i></button>
+    </div>
+  </nav>
+
+  <div class="mainContent">
+    {{{body}}}
+  </div>
+
+  <footer>
+    <button class="btn-no-style footer-btn"><i class="fa-brands fa-instagram"></i></button>
+    <button class="btn-no-style footer-btn"><i class="fa-brands fa-facebook"></i></button>
+    <button class="btn-no-style footer-btn"><i class="fa-brands fa-discord"></i></button>
+  </footer>
 </body>
 
 </html>

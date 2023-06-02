@@ -2,24 +2,49 @@ const { Clothing } = require('../models');
 
 const clothingdata = [
   {
-    name: 'Printemps',
-    starting_date: 'April 20, 2021 07:00:00',
-    ending_date: 'June 21, 2021 17:00:00',
+    name: "Men's Black T-Shirt",
+    price: '50.00',
+    genId: 1
   },
   {
-    name: 'T-Shirt',
-    price: '60.00',
-    image: 'insert image src here!!!!',
+    name: "Men's White T-Shirt",
+    price: '50.00',
+    genId: 1
   },
   {
-    name: 'Sweatpants',
-    price: '70.00',
-    image: 'insert image src here!!!!',
+    name: "Men's Black Hoodie",
+    price: '75.00',
+    genId: 1
   },
   {
-    name: 'Hoodie',
-    price: '80.00',
-    image: 'insert image src here!!!!',
+    name: "Men's White Hoodie",
+    price: '75.00',
+    genId: 1
+  },
+  {
+    name: "Women's Tan Shirt",
+    price: '55.00',
+    genId: 2
+  },
+  {
+    name: "Women's White Shirt",
+    price: '55.00',
+    genId: 2
+  },
+  {
+    name: "Women's Black Hoodie",
+    price: '75.00',
+    genId: 2
+  },
+  {
+    name: "Women's Gray Hoodie",
+    price: '75.00',
+    genId: 2
+  },
+  {
+    name: "Women's Gray Sweatpants",
+    price: '75.00',
+    genId: 2
   },
 ];
 
