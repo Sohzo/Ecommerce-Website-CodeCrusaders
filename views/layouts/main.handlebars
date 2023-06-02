@@ -6,41 +6,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CCA</title>
   <link rel="stylesheet" type="text/css" href="/css/jass.css">
-  <link rel="stylesheet" type="text/css" href="/css/style.css">
-  {{!-- Font Awesome --}}
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/2e52a06efa.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <header>
-    <img src="" alt="CCA Logo">
+    <img src="./images/code-crusaders-logo.jpg" alt="CCA Logo">
     <h1>Code Crusaders Apparel</h1>
   </header>
-  <header>
-    <button>Men</button>
-    <button>Woman</button>
-    <button>Login</button>
-    <button><i class="fa-regular fa-user"></i></button>
-  </header>
   <nav>
-    <a href="/">Home</a>
-    {{#if loggedIn}}
-    <button id="logout" class="btn-no-style">Logout</button>
-    {{else}}
-    <a href="/login">Login</a>
-    {{/if}}
-  </nav>
-  <main>
-    <aside>
-      <h2>Enjoy the galleries!</h2>
-    </aside>
-    <div class="gallery">
-      {{{body}}}
+    <div>
+      <button id="btn-men" class="btn-no-style">Men</button>
+      <button id="btn-women" class="btn-no-style">Woman</button>
     </div>
-  </main>
-  {{#if loggedIn}}
-  <script src="/js/logout.js"></script>
-  {{/if}}
+    <div>
+      <button id="logout" class="btn-no-style">Logout</button>
+      <button id="account" class="btn-no-style"><i class="fa-regular fa-user"></i></button>
+    </div>
+  </nav>
+
+  <div class="mainContent">
+    {{{body}}}
+  </div>
+
 </body>
 
 </html>
