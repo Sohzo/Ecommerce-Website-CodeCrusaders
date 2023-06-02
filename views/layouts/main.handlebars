@@ -22,12 +22,16 @@
       <button id="btn-women" class="btn-no-style">Women</button>
     </div>
     <div>
+      {{#if loggedIn}}
       <button id="logout" class="btn-no-style">Logout</button>
       <button id="account" class="btn-no-style"><i class="fa-regular fa-user"></i></button>
+      {{else}}
+      <button id="login" class="btn-no-style" onclick="window.location.href='/login'">Login</button>
+      {{/if}}
     </div>
   </nav>
 
-  <div class="mainContent">
+  <div class="container">
     {{{body}}}
   </div>
 
@@ -36,6 +40,10 @@
     <button class="btn-no-style footer-btn"><i class="fa-brands fa-facebook"></i></button>
     <button class="btn-no-style footer-btn"><i class="fa-brands fa-discord"></i></button>
   </footer>
+
+  {{#if logged_in}}
+  <script src="./js/logout.js"></script>
+  {{/if}}
 </body>
 
 </html>

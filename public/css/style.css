@@ -158,9 +158,9 @@ img {
 /* LAYOUT */
 .container {
   display: flex;
+  justify-content: center;
   flex-flow: column wrap;
-  align-content: flex-start;
-  align-items: center;
+  max-width: 100%;
 }
 
 
@@ -234,6 +234,8 @@ footer {
   align-self: flex-end;
 
 }
+
+/* body container */
 
 /* main page css */
 .overlay {
