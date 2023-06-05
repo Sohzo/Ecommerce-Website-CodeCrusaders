@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CCA</title>
   <link rel="stylesheet" type="text/css" href="/css/jass.css">
-  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/2e52a06efa.js" crossorigin="anonymous"></script>
 </head>
@@ -18,16 +18,20 @@
   </header>
   <nav>
     <div>
-      <button id="btn-men" class="btn-no-style">Men</button>
-      <button id="btn-women" class="btn-no-style">Women</button>
+      <button id="btn-men" class="btn-no-style" onclick="window.location.href='/men'">Men</button>
+      <button id="btn-women" class="btn-no-style" onclick="window.location.href='/women'">Women</button>
     </div>
     <div>
+      {{#if loggedIn}}
       <button id="logout" class="btn-no-style">Logout</button>
       <button id="account" class="btn-no-style"><i class="fa-regular fa-user"></i></button>
+      {{else}}
+      <button id="login" class="btn-no-style" onclick="window.location.href='/login'">Login</button>
+      {{/if}}
     </div>
   </nav>
 
-  <div class="mainContent">
+  <div class="container">
     {{{body}}}
   </div>
 
@@ -36,6 +40,10 @@
     <button class="btn-no-style footer-btn"><i class="fa-brands fa-facebook"></i></button>
     <button class="btn-no-style footer-btn"><i class="fa-brands fa-discord"></i></button>
   </footer>
+
+  {{#if loggedIn}}
+  <script src="/js/logout.js"></script>
+  {{/if}}
 </body>
 
 </html>

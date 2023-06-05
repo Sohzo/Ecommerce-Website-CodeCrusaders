@@ -3,10 +3,8 @@
   --secondary: #F06449;
   --tertiary: #5BC3EB;
   --quatrinary: #DADAD9;
-  --light: #e3e4e3;
+  --light: #EDE6E3;
   --dark: #011627;
-  --error: rgb(228, 46, 1);
-  --border-radius: 0.3rem;
 }
 
 body {
@@ -109,10 +107,9 @@ img {
 .card {
   margin: 20px;
   flex: 0 1 300px;
-  border: 7px double var(--dark);
   border-radius: 10px;
-  background-color: var(--light);
-  color: var(--dark);
+  background-color: var(--tertiary);
+  /* color: var(--dark); */
 }
 
 .login-card {
@@ -120,11 +117,8 @@ img {
   flex: 0 0 50%;
   max-width: 50%;
   padding: 5px;
-  border: 3px solid var(--dark);
-  border-radius: var(--border-radius);
-  border-style: double;
-  border-width: thick;
-  background-color: #577a7c;
+  border-radius: 2px;
+  background-color: var(--secondary);
   color: var(--light);
 }
 
@@ -158,23 +152,15 @@ img {
 /* LAYOUT */
 .container {
   display: flex;
+  justify-content: center;
   flex-flow: column wrap;
-  align-content: flex-start;
-  align-items: center;
+  max-width: 100%;
+
 }
 
 
 /* New Style */
 /* ---------------------------------------------------------------------- */
-:root {
-  --primary: #EDE6E3;
-  --secondary: #F06449;
-  --tertiary: #5BC3EB;
-  --quatrinary: #DADAD9;
-  --light: #EDE6E3;
-  --dark: #011627;
-}
-
 body {
   font-family: Arial;
   margin: 0;
@@ -235,6 +221,15 @@ footer {
 
 }
 
+/* login cards */
+.justify-space-between-md {
+  padding: 10px;
+  column-gap: 1px;
+  justify-content: center;
+}
+
+/* body container */
+
 /* main page css */
 .overlay {
   position: absolute;
@@ -243,10 +238,6 @@ footer {
   color: white;
   font-size: 24px;
   font-weight: bold;
-}
-
-.spacer {
-  height: 100px;
 }
 
 .image-container {
