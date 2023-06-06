@@ -14,7 +14,7 @@
 <body>
   <header>
     <img src="./images/code-crusaders-logo.jpg" alt="CCA Logo" onclick="window.location.href='/'">
-    <h1 class="animateTest">Code Crusaders Apparel</h1>
+    <h1 id="animateText">Code Crusaders Apparel</h1>
   </header>
   <nav>
     <div>
@@ -45,12 +45,7 @@
   <script src="/js/logout.js"></script>
   {{/if}}
   <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
-  <script>
-    anime({
-      targets: '.animateTest',
-      translateX: 250
-    });
-  </script>
+  <script src="/js/animate.js"></script>
 </body>
 
 </html>
