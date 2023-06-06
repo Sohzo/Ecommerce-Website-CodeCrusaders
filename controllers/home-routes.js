@@ -17,21 +17,15 @@ router.get("/men", async (req, res) => {
     const dbClothingData = await Clothing.findAll({
       where: {
         genId: 1,
-      },
-      include: [
-        {
-          model: Piece,
-          attributes: ["filename", "description"],
-        },
-      ],
+      }
     });
 
-    const menClothing = dbClothingData.map((clothing) =>
+    const clothing = dbClothingData.map((clothing) =>
       clothing.get({ plain: true })
     );
 
-    res.render("men-clothing", {
-      menClothing,
+    res.render("gallery", {
+      clothing,
       loggedIn: req.session.loggedIn,
     });
   } catch (err) {
@@ -46,21 +40,15 @@ router.get("/women", async (req, res) => {
     const dbClothingData = await Clothing.findAll({
       where: {
         genId: 2,
-      },
-      include: [
-        {
-          model: Piece,
-          attributes: ["filename", "description"],
-        },
-      ],
+      }
     });
 
-    const womenClothing = dbClothingData.map((clothing) =>
+    const clothing = dbClothingData.map((clothing) =>
       clothing.get({ plain: true })
     );
 
-    res.render("women-clothing", {
-      womenClothing,
+    res.render("gallery", {
+      clothing,
       loggedIn: req.session.loggedIn,
     });
   } catch (err) {
