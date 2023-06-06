@@ -1,6 +1,7 @@
-{{#each seeds}}
-    <div>
-    <img>{{product}}<img>
-     <h2>{{name}}</h2>
-    <p>{{price}}</p>
+{{#each clothing}}
+<div class="card">
+   <img src="{{imageURL}}" alt="{{name}}">
+   <h2>{{name}}</h2>
+   <p>Price: ${{price}}</p>
+</div>
 {{/each}}
