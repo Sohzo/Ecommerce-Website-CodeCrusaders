@@ -1,5 +1,3 @@
-const anime = require('animejs');
-
 anime({
     targets: '#animateTest',
     translateX: 250,
