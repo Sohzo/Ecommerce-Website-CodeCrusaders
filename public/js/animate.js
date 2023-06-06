@@ -40,3 +40,10 @@ anime({
     delay: anime.stagger(100, { start: 500 }),
     easing: 'easeInOutQuint'
 })
+
+anime({
+    targets: ('#slideInRight'),
+    translateX: [1500, 0],
+    delay: anime.stagger(100, { start: 500 }),
+    easing: 'easeInOutQuint'
+})
