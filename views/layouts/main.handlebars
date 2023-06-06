@@ -13,8 +13,8 @@
 
 <body>
   <header>
-    <img src="./images/code-crusaders-logo.jpg" alt="CCA Logo">
-    <h1 id="animateTest">Code Crusaders Apparel</h1>
+    <img src="./images/code-crusaders-logo.jpg" alt="CCA Logo" onclick="window.location.href='/'">
+    <h1 class="animateTest">Code Crusaders Apparel</h1>
   </header>
   <nav>
     <div>
@@ -44,11 +44,10 @@
   {{#if loggedIn}}
   <script src="/js/logout.js"></script>
   {{/if}}
-  <script src="anime.min.js"></script>
-  <script src="/js/animate.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
   <script>
     anime({
-      targets: '#animateTest',
+      targets: '.animateTest',
       translateX: 250
     });
   </script>
