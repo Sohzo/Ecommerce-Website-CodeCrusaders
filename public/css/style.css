@@ -263,3 +263,40 @@ footer {
 .womens-image {
   object-position: center -20vh;
 }
+/* Women's and Men's Shopping pages*/
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  width: 48%;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.card h2 {
+  color: #000;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #000;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.card p.price {
+  font-weight: bold;
+}
