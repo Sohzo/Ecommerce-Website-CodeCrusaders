@@ -175,6 +175,7 @@ footer {
 .image-container {
   min-width: 100%;
   position: relative;
+  z-index: -1;
 }
 
 .full-width-image {
