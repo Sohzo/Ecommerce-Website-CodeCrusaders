@@ -1,10 +1,10 @@
 module.exports = {
-  format_time: (date) => {
-    return date.toLocaleTimeString();
-  },
-  format_date: (date) => {
-    return `${new Date(date).getMonth() + 1}/${new Date(date).getDate()}/${
-      new Date(date).getFullYear() + 5
-    }`;
-  },
+  url: (url) => {
+    if (url == '/') {
+      return true
+    } else {
+      return false
+    }
+  }
 };
+// failed attempt at a helper

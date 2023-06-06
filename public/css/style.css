@@ -116,6 +116,7 @@ header img {
   border-radius: 50%;
   margin: 10px;
   height: 10vh;
+  cursor: pointer;
 }
 
 h1 {
@@ -175,6 +176,7 @@ footer {
 .image-container {
   min-width: 100%;
   position: relative;
+  z-index: -1;
 }
 
 .full-width-image {
@@ -211,7 +213,7 @@ footer {
 }
 
 .card {
-  width: 45%;
+  width: 30%;
   margin-bottom: 20px;
   padding: 10px;
   border: 1px solid #ccc;
