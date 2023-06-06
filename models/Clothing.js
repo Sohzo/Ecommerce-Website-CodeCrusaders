@@ -1,7 +1,7 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Clothing extends Model {}
+class Clothing extends Model { }
 
 Clothing.init(
   {
@@ -23,7 +23,7 @@ Clothing.init(
       type: DataTypes.INTEGER,
       allowNull: false
     },
-    image: {
+    imageURL: {
       type: DataTypes.STRING,
       allowNull: false
     }
