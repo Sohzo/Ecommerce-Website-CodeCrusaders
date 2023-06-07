@@ -25,6 +25,11 @@ This website will allow users to select a featured item of clothing. They can th
 This website can be used as a hub for users who want purchase relatively cheap clothing with a message. Something to make them different and standout
 
 Deployed website can be found at: https://code-crusaders.herokuapp.com/
+![Opening Front pt1](https://github.com/Sohzo/Ecommerce-Website-CodeCrusaders/assets/124640874/3ded474d-0771-4d4b-8644-8bb5e09cd1af)
+![Opening Front p2](https://github.com/Sohzo/Ecommerce-Website-CodeCrusaders/assets/124640874/dd69ee11-baf0-4229-977c-7ce27a91ed75)
+![Womens Screenshot](https://github.com/Sohzo/Ecommerce-Website-CodeCrusaders/assets/124640874/9c08d00e-2489-485f-9d5e-2f5eee107a5a)
+![Mens Screenshot](https://github.com/Sohzo/Ecommerce-Website-CodeCrusaders/assets/124640874/3ffb7020-b595-4719-903d-2f4b196cb17c)
+
 
 ## Credits
 
