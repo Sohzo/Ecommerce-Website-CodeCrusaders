@@ -26,6 +26,8 @@ This website can be used as a hub for users who want purchase relatively cheap c
 
 Deployed website can be found at: https://code-crusaders.herokuapp.com/
 
+<img src="/Users/kylerpeterson/bootcamp/CodeCrusaders/Ecommerce-Website-CodeCrusaders/public/images/Opening Front pt1.jpeg">
+
 ## Credits
 
 - Jonathan Winter
