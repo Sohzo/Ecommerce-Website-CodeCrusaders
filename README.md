@@ -24,7 +24,7 @@ This website will allow users to select a featured item of clothing. They can th
 
 This website can be used as a hub for users who want purchase relatively cheap clothing with a message. Something to make them different and standout
 
-Deployed website can be found at:
+Deployed website can be found at: https://code-crusaders.herokuapp.com/
 
 ## Credits
 
